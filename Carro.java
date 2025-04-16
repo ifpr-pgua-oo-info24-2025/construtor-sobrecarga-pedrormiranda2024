@@ -21,13 +21,6 @@ public class Carro {
         this.motor = motor;
     }
 
-    public void trocarCondutor(Condutor novoCondutor){
-        this.condutor = novoCondutor;
-    }
-
-    public void trocarMotor(Motor novoMotor){
-        this.motor = novoMotor;
-    }
 
     public String getMarca() {
         return marca;

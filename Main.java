@@ -9,10 +9,10 @@ public class Main {
         Carro carro3 = new Carro ("Lamborghini", "Urus", "P3DR0", motor1);
 
         carro2.setCondutor(condutor2);
-        
-        carro1.trocarCondutor(condutor2);
 
-        carro2.trocarMotor(motor1);
+        carro1.setCondutor(condutor1);
+
+        carro2.setMotor(motor1);
 
         System.out.println(carro1.toString());
         System.out.println(carro2.toString());
