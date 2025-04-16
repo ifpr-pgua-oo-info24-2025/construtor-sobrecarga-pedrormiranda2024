@@ -1,6 +1,6 @@
 public class Motor {
-    String tipo;
-    String potencia;
+    private String tipo;
+    private String potencia;
 
     public Motor (String tipo, String potencia) {
         this.tipo = tipo;

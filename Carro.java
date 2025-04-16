@@ -1,9 +1,9 @@
 public class Carro {
-    String marca;
-    String modelo;
-    String placa;
-    Motor motor;
-    Condutor condutor;
+    private String marca;
+    private String modelo;
+    private String placa;
+    private Motor motor;
+    private Condutor condutor;
 
 
     public Carro (String marca, String modelo, String placa, Motor motor, Condutor condutor) {
@@ -21,6 +21,13 @@ public class Carro {
         this.motor = motor;
     }
 
+    public void trocarCondutor(Condutor novoCondutor){
+        this.condutor = novoCondutor;
+    }
+
+    public void trocarMotor(Motor novoMotor){
+        this.motor = novoMotor;
+    }
 
     public String getMarca() {
         return marca;
@@ -55,12 +62,12 @@ public class Carro {
 
 
     public String toString() {
-        return "Carro [marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", motor=" + motor + ", condutor="
-                + condutor + "]";
+        return "Carro [marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", motor= tipo:" + motor.getTipo() + ", potencia:" + motor.getPotencia() + ", condutor= nome: "
+                + condutor.getNome() + ", condutor= CNH: " + condutor.getNumeroCNH() + "]";
     }
 
     public String toString(int ID) {
-        return "Carro [marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", motor=" + motor + "]";
+        return "Carro [marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", motor= tipo:" + motor.getTipo() + ", potencia:" + motor.getPotencia() + "]";
     }
 
 }

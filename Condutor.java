@@ -1,6 +1,6 @@
 public class Condutor {
-    String nome;
-    Integer numeroCNH;
+    private String nome;
+    private Integer numeroCNH;
 
     public Condutor (String nome, Integer numeroCNH) {
         this.nome = nome;
